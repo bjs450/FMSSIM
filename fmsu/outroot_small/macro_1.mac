@@ -1,0 +1,25 @@
+/control/verbose 2
+/run/verbose 2
+/vis/disable
+#/vis/open HepRepFile
+/vis/drawVolume
+/vis/viewer/set/viewpointThetaPhi 90 180 deg
+/vis/viewer/zoom 1.4
+/vis/scene/add/trajectories smooth
+# (if too many tracks cause core dump => /tracking/storeTrajectory 0)
+#/vis/scene/add/hits
+#/vis/scene/endOfEventAction accumulate
+/gun/position 0 0 -700. cm
+/gun/particle gamma
+/gun/direction -0.160627 0.526526 4.433452
+/gun/energy 55.910000 GeV
+/run/beamOn 1
+/gun/particle gamma
+/gun/direction -0.323027 -0.170364 8.149374
+/gun/energy 88.199997 GeV
+/run/beamOn 1
+/gun/particle gamma
+/gun/direction 0.226373 -0.097056 4.191964
+/gun/energy 93.370003 GeV
+/run/beamOn 1
+exit
