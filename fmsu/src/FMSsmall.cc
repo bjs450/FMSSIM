@@ -1,4 +1,5 @@
 #include "FMSsmall.hh"
+
 #include "FMSsmallHit.hh"
 #include "G4HCofThisEvent.hh"
 #include "G4Step.hh"
@@ -9,6 +10,9 @@
 #include "G4ProcessManager.hh"
 #include "G4ParticleDefinition.hh"
 #include "G4ParticleTypes.hh"
+#include "CellGeo.hh"
+#include "TrackInformation.hh"
+
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
 FMSsmall::FMSsmall(G4String name)

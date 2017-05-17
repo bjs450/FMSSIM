@@ -1,4 +1,4 @@
-/home/bsumma/simulations/geant//tmp/Linux-g++/simutesting/exe/simutesting.o /home/bsumma/simulations/geant//tmp/Linux-g++/simutesting/exe/simutesting.d: simutesting.cc /usr/include/stdc-predef.h \
+/home/bsumma/simulations/FMSSIM//tmp/Linux-g++/simutesting/exe/simutesting.o /home/bsumma/simulations/FMSSIM//tmp/Linux-g++/simutesting/exe/simutesting.d: simutesting.cc /usr/include/stdc-predef.h \
  /usr/include/stdlib.h /usr/include/features.h \
  /usr/include/x86_64-linux-gnu/sys/cdefs.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
@@ -234,7 +234,7 @@
  /home/bsumma/simulations/builds/geant4-install/include/Geant4/G4AffineTransform.hh \
  /home/bsumma/simulations/builds/geant4-install/include/Geant4/G4AffineTransform.icc \
  /home/bsumma/simulations/builds/geant4-install/include/Geant4/G4BooleanSolid.icc \
- include/CellGeo.hh include/PhysicsList.hh \
+ include/PhysicsList.hh \
  /home/bsumma/simulations/builds/geant4-install/include/Geant4/G4VUserPhysicsList.hh \
  /home/bsumma/simulations/builds/geant4-install/include/Geant4/G4ParticleTable.hh \
  /home/bsumma/simulations/builds/geant4-install/include/Geant4/G4ParticleDefinition.hh \
@@ -346,6 +346,91 @@
  /home/bsumma/simulations/builds/geant4-install/include/Geant4/G4UImessenger.hh \
  include/RunAction.hh \
  /home/bsumma/simulations/builds/geant4-install/include/Geant4/G4UserRunAction.hh \
+ /home/bsumma/simulations/builds/geant4-install/include/Geant4/G4Run.hh \
+ include/EventAction.hh \
+ /home/bsumma/builds/root60802-build/include/TString.h \
+ /home/bsumma/builds/root60802-build/include/Riosfwd.h \
+ /home/bsumma/builds/root60802-build/include/TMathBase.h \
+ /home/bsumma/builds/root60802-build/include/Rtypes.h \
+ /home/bsumma/builds/root60802-build/include/RtypesCore.h \
+ /home/bsumma/builds/root60802-build/include/RConfig.h \
+ /home/bsumma/builds/root60802-build/include/RVersion.h \
+ /home/bsumma/builds/root60802-build/include/DllImport.h \
+ /home/bsumma/builds/root60802-build/include/Rtypeinfo.h \
+ /usr/include/c++/5/typeinfo \
+ /home/bsumma/builds/root60802-build/include/snprintf.h \
+ /home/bsumma/builds/root60802-build/include/strlcpy.h \
+ /usr/include/unistd.h /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
+ /usr/include/x86_64-linux-gnu/bits/environments.h \
+ /usr/include/x86_64-linux-gnu/bits/confname.h /usr/include/getopt.h \
+ /usr/include/c++/5/atomic /usr/include/c++/5/bits/atomic_base.h \
+ /home/bsumma/builds/root60802-build/include/TGenericClassInfo.h \
+ /home/bsumma/builds/root60802-build/include/TSchemaHelper.h \
+ /home/bsumma/builds/root60802-build/include/RStringView.h \
+ /home/bsumma/builds/root60802-build/include/RConfigure.h \
+ /home/bsumma/builds/root60802-build/include/RWrap_libcpp_string_view.h \
+ /usr/include/c++/5/iterator /usr/include/c++/5/bits/stream_iterator.h \
+ /home/bsumma/builds/root60802-build/include/libcpp_string_view.h \
+ /home/bsumma/builds/root60802-build/include/TH1F.h \
+ /home/bsumma/builds/root60802-build/include/TH1.h \
+ /home/bsumma/builds/root60802-build/include/TAxis.h \
+ /home/bsumma/builds/root60802-build/include/TNamed.h \
+ /home/bsumma/builds/root60802-build/include/TObject.h \
+ /home/bsumma/builds/root60802-build/include/TStorage.h \
+ /home/bsumma/builds/root60802-build/include/TVersionCheck.h \
+ /home/bsumma/builds/root60802-build/include/TAttAxis.h \
+ /home/bsumma/builds/root60802-build/include/TArrayD.h \
+ /home/bsumma/builds/root60802-build/include/TArray.h \
+ /home/bsumma/builds/root60802-build/include/TAttLine.h \
+ /home/bsumma/builds/root60802-build/include/TAttFill.h \
+ /home/bsumma/builds/root60802-build/include/TAttMarker.h \
+ /home/bsumma/builds/root60802-build/include/TArrayC.h \
+ /home/bsumma/builds/root60802-build/include/TArrayS.h \
+ /home/bsumma/builds/root60802-build/include/TArrayI.h \
+ /home/bsumma/builds/root60802-build/include/TArrayF.h \
+ /home/bsumma/builds/root60802-build/include/Foption.h \
+ /home/bsumma/builds/root60802-build/include/TVectorFfwd.h \
+ /home/bsumma/builds/root60802-build/include/TVectorDfwd.h \
+ /home/bsumma/builds/root60802-build/include/TFitResultPtr.h \
+ /usr/include/c++/5/memory /usr/include/c++/5/bits/stl_raw_storage_iter.h \
+ /usr/include/c++/5/ext/concurrence.h /usr/include/c++/5/functional \
+ /usr/include/c++/5/bits/unique_ptr.h \
+ /usr/include/c++/5/bits/shared_ptr.h \
+ /usr/include/c++/5/bits/shared_ptr_base.h \
+ /usr/include/c++/5/bits/allocated_ptr.h \
+ /usr/include/c++/5/bits/shared_ptr_atomic.h \
+ /usr/include/c++/5/backward/auto_ptr.h \
+ /usr/lib/gcc/x86_64-linux-gnu/5/include/float.h \
+ /home/bsumma/builds/root60802-build/include/TFile.h \
+ /home/bsumma/builds/root60802-build/include/TDirectoryFile.h \
+ /home/bsumma/builds/root60802-build/include/TDirectory.h \
+ /home/bsumma/builds/root60802-build/include/TBuffer.h \
+ /home/bsumma/builds/root60802-build/include/TList.h \
+ /home/bsumma/builds/root60802-build/include/TSeqCollection.h \
+ /home/bsumma/builds/root60802-build/include/TCollection.h \
+ /home/bsumma/builds/root60802-build/include/TIterator.h \
+ /home/bsumma/builds/root60802-build/include/TDatime.h \
+ /home/bsumma/builds/root60802-build/include/TUUID.h \
+ /home/bsumma/builds/root60802-build/include/TMap.h \
+ /home/bsumma/builds/root60802-build/include/THashTable.h \
+ /home/bsumma/builds/root60802-build/include/TUrl.h \
+ /home/bsumma/builds/root60802-build/include/TTree.h \
+ /home/bsumma/builds/root60802-build/include/TBranch.h \
+ /home/bsumma/builds/root60802-build/include/TObjArray.h \
+ /home/bsumma/builds/root60802-build/include/TDataType.h \
+ /home/bsumma/builds/root60802-build/include/TDictionary.h \
+ /home/bsumma/builds/root60802-build/include/ESTLType.h \
+ /home/bsumma/builds/root60802-build/include/TClass.h \
+ /home/bsumma/builds/root60802-build/include/TObjString.h \
+ /usr/include/c++/5/set /usr/include/c++/5/bits/stl_set.h \
+ /usr/include/c++/5/bits/stl_multiset.h /usr/include/c++/5/unordered_set \
+ /usr/include/c++/5/bits/hashtable.h \
+ /usr/include/c++/5/bits/hashtable_policy.h \
+ /usr/include/c++/5/bits/unordered_set.h \
+ /home/bsumma/builds/root60802-build/include/ThreadLocalStorage.h \
+ /home/bsumma/builds/root60802-build/include/TVirtualTreePlayer.h \
+ /home/bsumma/builds/root60802-build/include/TBranch.h \
+ /home/bsumma/simulations/builds/geant4-install/include/Geant4/G4UserEventAction.hh \
  /home/bsumma/simulations/builds/geant4-install/include/Geant4/G4SDManager.hh \
  /home/bsumma/simulations/builds/geant4-install/include/Geant4/G4SDStructure.hh \
  /home/bsumma/simulations/builds/geant4-install/include/Geant4/G4VSensitiveDetector.hh \
@@ -417,15 +502,7 @@
  /home/bsumma/simulations/builds/geant4-install/include/Geant4/CLHEP/Utility/memory.h \
  /home/bsumma/simulations/builds/geant4-install/include/Geant4/CLHEP/Utility/noncopyable.h \
  /home/bsumma/simulations/builds/geant4-install/include/Geant4/CLHEP/Utility/type_traits.h \
- /usr/include/c++/5/memory /usr/include/c++/5/bits/stl_raw_storage_iter.h \
- /usr/include/c++/5/typeinfo /usr/include/c++/5/ext/concurrence.h \
- /usr/include/c++/5/functional /usr/include/c++/5/bits/unique_ptr.h \
- /usr/include/c++/5/bits/shared_ptr.h \
- /usr/include/c++/5/bits/shared_ptr_base.h \
- /usr/include/c++/5/bits/allocated_ptr.h \
- /usr/include/c++/5/bits/shared_ptr_atomic.h \
- /usr/include/c++/5/bits/atomic_base.h \
- /usr/include/c++/5/backward/auto_ptr.h /usr/include/c++/5/cassert \
+ /usr/include/c++/5/cassert \
  /home/bsumma/simulations/builds/geant4-install/include/Geant4/CLHEP/Random/RandBinomial.icc \
  /home/bsumma/simulations/builds/geant4-install/include/Geant4/CLHEP/Random/RandBreitWigner.h \
  /home/bsumma/simulations/builds/geant4-install/include/Geant4/CLHEP/Random/RandFlat.h \
@@ -479,122 +556,40 @@
  /home/bsumma/simulations/builds/geant4-install/include/Geant4/G4THitsCollection.hh \
  /home/bsumma/simulations/builds/geant4-install/include/Geant4/G4Allocator.hh \
  /home/bsumma/simulations/builds/geant4-install/include/Geant4/G4ThreeVector.hh \
- include/TrackInformation.hh \
- /home/bsumma/simulations/builds/geant4-install/include/Geant4/G4ParticleDefinition.hh \
- /home/bsumma/simulations/builds/geant4-install/include/Geant4/G4DecayTable.hh \
- /home/bsumma/simulations/builds/geant4-install/include/Geant4/G4VDecayChannel.hh \
- /home/bsumma/simulations/builds/geant4-install/include/Geant4/G4Track.hh \
- /home/bsumma/simulations/builds/geant4-install/include/Geant4/G4VUserTrackInformation.hh \
- include/FMSsmallHit.hh include/EventAction.hh \
- /home/bsumma/simulations/builds/root/include/TString.h \
- /home/bsumma/simulations/builds/root/include/Riosfwd.h \
- /home/bsumma/simulations/builds/root/include/TMathBase.h \
- /home/bsumma/simulations/builds/root/include/Rtypes.h \
- /home/bsumma/simulations/builds/root/include/RtypesCore.h \
- /home/bsumma/simulations/builds/root/include/RConfig.h \
- /home/bsumma/simulations/builds/root/include/RVersion.h \
- /home/bsumma/simulations/builds/root/include/DllImport.h \
- /home/bsumma/simulations/builds/root/include/Rtypeinfo.h \
- /home/bsumma/simulations/builds/root/include/snprintf.h \
- /home/bsumma/simulations/builds/root/include/strlcpy.h \
- /usr/include/unistd.h /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
- /usr/include/x86_64-linux-gnu/bits/environments.h \
- /usr/include/x86_64-linux-gnu/bits/confname.h /usr/include/getopt.h \
- /usr/include/c++/5/atomic \
- /home/bsumma/simulations/builds/root/include/TGenericClassInfo.h \
- /home/bsumma/simulations/builds/root/include/TSchemaHelper.h \
- /home/bsumma/simulations/builds/root/include/RStringView.h \
- /home/bsumma/simulations/builds/root/include/RConfigure.h \
- /home/bsumma/simulations/builds/root/include/RWrap_libcpp_string_view.h \
- /usr/include/c++/5/iterator /usr/include/c++/5/bits/stream_iterator.h \
- /home/bsumma/simulations/builds/root/include/libcpp_string_view.h \
- /home/bsumma/simulations/builds/root/include/TH1F.h \
- /home/bsumma/simulations/builds/root/include/TH1.h \
- /home/bsumma/simulations/builds/root/include/TAxis.h \
- /home/bsumma/simulations/builds/root/include/TNamed.h \
- /home/bsumma/simulations/builds/root/include/TObject.h \
- /home/bsumma/simulations/builds/root/include/TStorage.h \
- /home/bsumma/simulations/builds/root/include/TVersionCheck.h \
- /home/bsumma/simulations/builds/root/include/TAttAxis.h \
- /home/bsumma/simulations/builds/root/include/TArrayD.h \
- /home/bsumma/simulations/builds/root/include/TArray.h \
- /home/bsumma/simulations/builds/root/include/TAttLine.h \
- /home/bsumma/simulations/builds/root/include/TAttFill.h \
- /home/bsumma/simulations/builds/root/include/TAttMarker.h \
- /home/bsumma/simulations/builds/root/include/TArrayC.h \
- /home/bsumma/simulations/builds/root/include/TArrayS.h \
- /home/bsumma/simulations/builds/root/include/TArrayI.h \
- /home/bsumma/simulations/builds/root/include/TArrayF.h \
- /home/bsumma/simulations/builds/root/include/Foption.h \
- /home/bsumma/simulations/builds/root/include/TVectorFfwd.h \
- /home/bsumma/simulations/builds/root/include/TVectorDfwd.h \
- /home/bsumma/simulations/builds/root/include/TFitResultPtr.h \
- /usr/lib/gcc/x86_64-linux-gnu/5/include/float.h \
- /home/bsumma/simulations/builds/root/include/TFile.h \
- /home/bsumma/simulations/builds/root/include/TDirectoryFile.h \
- /home/bsumma/simulations/builds/root/include/TDirectory.h \
- /home/bsumma/simulations/builds/root/include/TBuffer.h \
- /home/bsumma/simulations/builds/root/include/TList.h \
- /home/bsumma/simulations/builds/root/include/TSeqCollection.h \
- /home/bsumma/simulations/builds/root/include/TCollection.h \
- /home/bsumma/simulations/builds/root/include/TIterator.h \
- /home/bsumma/simulations/builds/root/include/TDatime.h \
- /home/bsumma/simulations/builds/root/include/TUUID.h \
- /home/bsumma/simulations/builds/root/include/TMap.h \
- /home/bsumma/simulations/builds/root/include/THashTable.h \
- /home/bsumma/simulations/builds/root/include/TUrl.h \
- /home/bsumma/simulations/builds/root/include/TTree.h \
- /home/bsumma/simulations/builds/root/include/TBranch.h \
- /home/bsumma/simulations/builds/root/include/TObjArray.h \
- /home/bsumma/simulations/builds/root/include/TDataType.h \
- /home/bsumma/simulations/builds/root/include/TDictionary.h \
- /home/bsumma/simulations/builds/root/include/ESTLType.h \
- /home/bsumma/simulations/builds/root/include/TClass.h \
- /home/bsumma/simulations/builds/root/include/TObjString.h \
- /usr/include/c++/5/set /usr/include/c++/5/bits/stl_set.h \
- /usr/include/c++/5/bits/stl_multiset.h /usr/include/c++/5/unordered_set \
- /usr/include/c++/5/bits/hashtable.h \
- /usr/include/c++/5/bits/hashtable_policy.h \
- /usr/include/c++/5/bits/unordered_set.h \
- /home/bsumma/simulations/builds/root/include/ThreadLocalStorage.h \
- /home/bsumma/simulations/builds/root/include/TVirtualTreePlayer.h \
- /home/bsumma/simulations/builds/root/include/TBranch.h \
- /home/bsumma/simulations/builds/geant4-install/include/Geant4/G4UserEventAction.hh \
- include/StackingAction.hh \
+ include/FMSsmallHit.hh include/CellGeo.hh include/StackingAction.hh \
  /home/bsumma/simulations/builds/geant4-install/include/Geant4/G4UserStackingAction.hh \
- include/PostSim.hh \
- /home/bsumma/simulations/builds/root/include/TCanvas.h \
- /home/bsumma/simulations/builds/root/include/TPad.h \
- /home/bsumma/simulations/builds/root/include/TVirtualPad.h \
- /home/bsumma/simulations/builds/root/include/TAttPad.h \
- /home/bsumma/simulations/builds/root/include/TVirtualX.h \
- /home/bsumma/simulations/builds/root/include/TAttText.h \
- /home/bsumma/simulations/builds/root/include/GuiTypes.h \
- /home/bsumma/simulations/builds/root/include/Buttons.h \
- /home/bsumma/simulations/builds/root/include/TQObject.h \
- /home/bsumma/simulations/builds/root/include/TQObjectEmitVA.h \
- /home/bsumma/simulations/builds/root/include/TQConnection.h \
- /home/bsumma/simulations/builds/root/include/Varargs.h \
- /home/bsumma/simulations/builds/root/include/TInterpreter.h \
- /home/bsumma/simulations/builds/root/include/TVirtualMutex.h \
- /home/bsumma/simulations/builds/root/include/TAttBBox2D.h \
- /home/bsumma/simulations/builds/root/include/TPoint.h \
- /home/bsumma/simulations/builds/root/include/TAttCanvas.h \
- /home/bsumma/simulations/builds/root/include/TCanvasImp.h \
- /home/bsumma/simulations/builds/root/include/TH2F.h \
- /home/bsumma/simulations/builds/root/include/TH2.h \
- /home/bsumma/simulations/builds/root/include/TMatrixFBasefwd.h \
- /home/bsumma/simulations/builds/root/include/TMatrixDBasefwd.h \
- /home/bsumma/simulations/builds/root/include/TMatrix.h \
- /home/bsumma/simulations/builds/root/include/TMatrixF.h \
- /home/bsumma/simulations/builds/root/include/TMatrixT.h \
- /home/bsumma/simulations/builds/root/include/TMatrixTBase.h \
- /home/bsumma/simulations/builds/root/include/TError.h \
- /home/bsumma/simulations/builds/root/include/TMatrixTUtils.h \
- /home/bsumma/simulations/builds/root/include/TMatrixFfwd.h \
- /home/bsumma/simulations/builds/root/include/TMatrixFUtils.h \
- /home/bsumma/simulations/builds/root/include/TMatrixFUtilsfwd.h \
- /home/bsumma/simulations/builds/root/include/TObjArray.h \
+ include/PostSim.hh /home/bsumma/builds/root60802-build/include/TCanvas.h \
+ /home/bsumma/builds/root60802-build/include/TPad.h \
+ /home/bsumma/builds/root60802-build/include/TVirtualPad.h \
+ /home/bsumma/builds/root60802-build/include/TAttPad.h \
+ /home/bsumma/builds/root60802-build/include/TVirtualX.h \
+ /home/bsumma/builds/root60802-build/include/TAttText.h \
+ /home/bsumma/builds/root60802-build/include/GuiTypes.h \
+ /home/bsumma/builds/root60802-build/include/Buttons.h \
+ /home/bsumma/builds/root60802-build/include/TQObject.h \
+ /home/bsumma/builds/root60802-build/include/TQObjectEmitVA.h \
+ /home/bsumma/builds/root60802-build/include/TQConnection.h \
+ /home/bsumma/builds/root60802-build/include/Varargs.h \
+ /home/bsumma/builds/root60802-build/include/TInterpreter.h \
+ /home/bsumma/builds/root60802-build/include/TVirtualMutex.h \
+ /home/bsumma/builds/root60802-build/include/TAttBBox2D.h \
+ /home/bsumma/builds/root60802-build/include/TPoint.h \
+ /home/bsumma/builds/root60802-build/include/TAttCanvas.h \
+ /home/bsumma/builds/root60802-build/include/TCanvasImp.h \
+ /home/bsumma/builds/root60802-build/include/TH2F.h \
+ /home/bsumma/builds/root60802-build/include/TH2.h \
+ /home/bsumma/builds/root60802-build/include/TMatrixFBasefwd.h \
+ /home/bsumma/builds/root60802-build/include/TMatrixDBasefwd.h \
+ /home/bsumma/builds/root60802-build/include/TMatrix.h \
+ /home/bsumma/builds/root60802-build/include/TMatrixF.h \
+ /home/bsumma/builds/root60802-build/include/TMatrixT.h \
+ /home/bsumma/builds/root60802-build/include/TMatrixTBase.h \
+ /home/bsumma/builds/root60802-build/include/TError.h \
+ /home/bsumma/builds/root60802-build/include/TMatrixTUtils.h \
+ /home/bsumma/builds/root60802-build/include/TMatrixFfwd.h \
+ /home/bsumma/builds/root60802-build/include/TMatrixFUtils.h \
+ /home/bsumma/builds/root60802-build/include/TMatrixFUtilsfwd.h \
+ /home/bsumma/builds/root60802-build/include/TObjArray.h \
  /home/bsumma/simulations/builds/geant4-install/include/Geant4/G4FileUtilities.hh \
  /usr/include/fcntl.h /usr/include/x86_64-linux-gnu/bits/fcntl.h \
  /usr/include/x86_64-linux-gnu/bits/fcntl-linux.h \
@@ -602,23 +597,25 @@
  /usr/include/x86_64-linux-gnu/bits/stat.h \
  /home/bsumma/simulations/analysis/root12fms/FpdRoot/Qt.h \
  /home/bsumma/simulations/analysis/root12fms/FpdRoot/FilesSet.h \
- /home/bsumma/simulations/builds/root/include/TObject.h \
+ /home/bsumma/builds/root60802-build/include/TObject.h \
  /home/bsumma/simulations/analysis/root12fms/FpdRoot/Filentry.h \
  /home/bsumma/simulations/analysis/root12fms/FpdRoot/FilesSet.h \
  include/Trajectory.hh \
  /home/bsumma/simulations/builds/geant4-install/include/Geant4/G4VTrajectory.hh \
  /home/bsumma/simulations/builds/geant4-install/include/Geant4/G4ios.hh \
+ /home/bsumma/simulations/builds/geant4-install/include/Geant4/G4ParticleDefinition.hh \
  /home/bsumma/simulations/builds/geant4-install/include/Geant4/G4TrajectoryPoint.hh \
  /home/bsumma/simulations/builds/geant4-install/include/Geant4/G4VTrajectoryPoint.hh \
+ /home/bsumma/simulations/builds/geant4-install/include/Geant4/G4Track.hh \
  /home/bsumma/simulations/builds/geant4-install/include/Geant4/G4Step.hh \
- /home/bsumma/simulations/builds/root/include/TVector3.h \
- /home/bsumma/simulations/builds/root/include/TVector2.h \
- /home/bsumma/simulations/builds/root/include/TMath.h \
- /home/bsumma/simulations/geant/fmsu/myRootClass/G4QT.h \
- /home/bsumma/simulations/builds/root/include/TMath.h \
+ /home/bsumma/builds/root60802-build/include/TVector3.h \
+ /home/bsumma/builds/root60802-build/include/TVector2.h \
+ /home/bsumma/builds/root60802-build/include/TMath.h \
+ /home/bsumma/simulations/FMSSIM/fmsu/myRootClass/G4QT.h \
+ /home/bsumma/builds/root60802-build/include/TMath.h \
  include/TrackingAction.hh \
  /home/bsumma/simulations/builds/geant4-install/include/Geant4/G4UserTrackingAction.hh \
- /home/bsumma/simulations/builds/root/include/TH1D.h \
+ /home/bsumma/builds/root60802-build/include/TH1D.h \
  /home/bsumma/simulations/builds/geant4-install/include/Geant4/G4ParticleTypes.hh \
  /home/bsumma/simulations/builds/geant4-install/include/Geant4/G4ChargedGeantino.hh \
  /home/bsumma/simulations/builds/geant4-install/include/Geant4/G4Geantino.hh \
@@ -721,9 +718,12 @@
  /home/bsumma/simulations/builds/geant4-install/include/Geant4/G4GenericIon.hh \
  include/CellGeo.hh include/StackingAction.hh include/SteppingAction.hh \
  /home/bsumma/simulations/builds/geant4-install/include/Geant4/G4UserSteppingAction.hh \
+ include/TrackInformation.hh \
+ /home/bsumma/simulations/builds/geant4-install/include/Geant4/G4DecayTable.hh \
+ /home/bsumma/simulations/builds/geant4-install/include/Geant4/G4VDecayChannel.hh \
+ /home/bsumma/simulations/builds/geant4-install/include/Geant4/G4VUserTrackInformation.hh \
  include/SteppingVerbose.hh \
  /home/bsumma/simulations/builds/geant4-install/include/Geant4/G4SteppingVerbose.hh \
- include/StepTree.hh \
  /home/bsumma/simulations/builds/geant4-install/include/Geant4/G4UImanager.hh \
  /home/bsumma/simulations/builds/geant4-install/include/Geant4/G4VStateDependent.hh \
  /home/bsumma/simulations/builds/geant4-install/include/Geant4/G4ApplicationState.hh \
@@ -805,4 +805,8 @@
  /home/bsumma/simulations/builds/geant4-install/include/Geant4/G4UIcommandTree.hh \
  include/CellParameterisation.hh \
  /home/bsumma/simulations/builds/geant4-install/include/Geant4/G4VPVParameterisation.hh \
+ /home/bsumma/simulations/builds/geant4-install/include/Geant4/G4VPhysicalVolume.hh \
+ /home/bsumma/simulations/builds/geant4-install/include/Geant4/G4Box.hh \
+ /home/bsumma/simulations/builds/geant4-install/include/Geant4/G4CSGSolid.hh \
+ /home/bsumma/simulations/builds/geant4-install/include/Geant4/G4Box.icc \
  /home/bsumma/simulations/builds/geant4-install/include/Geant4/Randomize.hh

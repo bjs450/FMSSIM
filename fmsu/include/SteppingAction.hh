@@ -36,10 +36,6 @@
 #include "globals.hh"
 #include "G4UserSteppingAction.hh"
 
-//BS
-#include "CellGeo.hh"
-#include "TrackInformation.hh"
-
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
 class SteppingAction : public G4UserSteppingAction

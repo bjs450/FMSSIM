@@ -35,6 +35,11 @@ class DetectorConstruction : public G4VUserDetectorConstruction
 
   private:
 
+
+    //BS CHANGE
+    G4bool useSurface;
+    //END BS CHANGE
+
     G4Box*             solidWorld;    // pointer to the solid envelope 
     G4LogicalVolume*   logicWorld;    // pointer to the logical envelope
     G4VPhysicalVolume* physiWorld;    // pointer to the physical envelope

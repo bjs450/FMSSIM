@@ -1,4 +1,4 @@
-/home/bsumma/simulations/geant//tmp/Linux-g++/simutesting/FMSsmallHit.o /home/bsumma/simulations/geant//tmp/Linux-g++/simutesting/FMSsmallHit.d: src/FMSsmallHit.cc /usr/include/stdc-predef.h \
+/home/bsumma/simulations/FMSSIM//tmp/Linux-g++/simutesting/FMSsmallHit.o /home/bsumma/simulations/FMSSIM//tmp/Linux-g++/simutesting/FMSsmallHit.d: src/FMSsmallHit.cc /usr/include/stdc-predef.h \
  include/FMSsmallHit.hh \
  /home/bsumma/simulations/builds/geant4-install/include/Geant4/G4VHit.hh \
  /home/bsumma/simulations/builds/geant4-install/include/Geant4/globals.hh \
@@ -212,21 +212,13 @@
  /home/bsumma/simulations/builds/geant4-install/include/Geant4/CLHEP/Vector/ThreeVector.h \
  /home/bsumma/simulations/builds/geant4-install/include/Geant4/CLHEP/Utility/defs.h \
  /home/bsumma/simulations/builds/geant4-install/include/Geant4/CLHEP/Vector/ThreeVector.icc \
- include/TrackInformation.hh \
- /home/bsumma/simulations/builds/geant4-install/include/Geant4/globals.hh \
- /home/bsumma/simulations/builds/geant4-install/include/Geant4/G4ParticleDefinition.hh \
- /home/bsumma/simulations/builds/geant4-install/include/Geant4/G4ParticleDefinition.icc \
- /home/bsumma/simulations/builds/geant4-install/include/Geant4/G4DecayTable.hh \
- /home/bsumma/simulations/builds/geant4-install/include/Geant4/G4ParticleDefinition.hh \
- /home/bsumma/simulations/builds/geant4-install/include/Geant4/G4VDecayChannel.hh \
- /home/bsumma/simulations/builds/geant4-install/include/Geant4/G4Track.hh \
+ /home/bsumma/simulations/builds/geant4-install/include/Geant4/G4UnitsTable.hh \
  /home/bsumma/simulations/builds/geant4-install/include/Geant4/G4ThreeVector.hh \
- /home/bsumma/simulations/builds/geant4-install/include/Geant4/G4LogicalVolume.hh \
- /home/bsumma/simulations/builds/geant4-install/include/Geant4/G4Region.hh \
- /home/bsumma/simulations/builds/geant4-install/include/Geant4/G4Region.icc \
- /home/bsumma/simulations/builds/geant4-install/include/Geant4/G4VPhysicalVolume.hh \
- /home/bsumma/simulations/builds/geant4-install/include/Geant4/geomdefs.hh \
- /home/bsumma/simulations/builds/geant4-install/include/Geant4/G4RotationMatrix.hh \
+ /home/bsumma/simulations/builds/geant4-install/include/Geant4/G4UnitsTable.icc \
+ /home/bsumma/simulations/builds/geant4-install/include/Geant4/G4VVisManager.hh \
+ /home/bsumma/simulations/builds/geant4-install/include/Geant4/G4Transform3D.hh \
+ /home/bsumma/simulations/builds/geant4-install/include/Geant4/CLHEP/Geometry/Transform3D.h \
+ /home/bsumma/simulations/builds/geant4-install/include/Geant4/CLHEP/Geometry/Transform3D.icc \
  /home/bsumma/simulations/builds/geant4-install/include/Geant4/CLHEP/Vector/Rotation.h \
  /home/bsumma/simulations/builds/geant4-install/include/Geant4/CLHEP/Vector/RotationInterfaces.h \
  /home/bsumma/simulations/builds/geant4-install/include/Geant4/CLHEP/Vector/LorentzVector.h \
@@ -241,75 +233,11 @@
  /home/bsumma/simulations/builds/geant4-install/include/Geant4/CLHEP/Vector/RotationZ.h \
  /home/bsumma/simulations/builds/geant4-install/include/Geant4/CLHEP/Vector/RotationZ.icc \
  /home/bsumma/simulations/builds/geant4-install/include/Geant4/CLHEP/Vector/Rotation.icc \
- /home/bsumma/simulations/builds/geant4-install/include/Geant4/G4VPhysicalVolume.icc \
- /usr/include/assert.h \
- /home/bsumma/simulations/builds/geant4-install/include/Geant4/G4LogicalVolume.icc \
- /home/bsumma/simulations/builds/geant4-install/include/Geant4/G4DynamicParticle.hh \
- /home/bsumma/simulations/builds/geant4-install/include/Geant4/G4LorentzVector.hh \
- /home/bsumma/simulations/builds/geant4-install/include/Geant4/G4ParticleMomentum.hh \
- /home/bsumma/simulations/builds/geant4-install/include/Geant4/G4ElectronOccupancy.hh \
- /home/bsumma/simulations/builds/geant4-install/include/Geant4/G4PrimaryParticle.hh \
- /home/bsumma/simulations/builds/geant4-install/include/Geant4/G4DynamicParticle.icc \
- /home/bsumma/simulations/builds/geant4-install/include/Geant4/G4TrackStatus.hh \
- /home/bsumma/simulations/builds/geant4-install/include/Geant4/G4TouchableHandle.hh \
- /home/bsumma/simulations/builds/geant4-install/include/Geant4/G4VTouchable.hh \
- /home/bsumma/simulations/builds/geant4-install/include/Geant4/G4VTouchable.icc \
- /home/bsumma/simulations/builds/geant4-install/include/Geant4/G4ReferenceCountedHandle.hh \
- /home/bsumma/simulations/builds/geant4-install/include/Geant4/G4VUserTrackInformation.hh \
- /home/bsumma/simulations/builds/geant4-install/include/Geant4/G4Material.hh \
- /home/bsumma/simulations/builds/geant4-install/include/Geant4/G4Element.hh \
- /home/bsumma/simulations/builds/geant4-install/include/Geant4/G4Isotope.hh \
- /home/bsumma/simulations/builds/geant4-install/include/Geant4/G4IonisParamElm.hh \
- /home/bsumma/simulations/builds/geant4-install/include/Geant4/G4IsotopeVector.hh \
- /home/bsumma/simulations/builds/geant4-install/include/Geant4/G4ElementTable.hh \
- /home/bsumma/simulations/builds/geant4-install/include/Geant4/G4MaterialPropertiesTable.hh \
- /home/bsumma/simulations/builds/geant4-install/include/Geant4/G4MaterialPropertyVector.hh \
- /home/bsumma/simulations/builds/geant4-install/include/Geant4/G4PhysicsOrderedFreeVector.hh \
- /home/bsumma/simulations/builds/geant4-install/include/Geant4/G4PhysicsVector.hh \
- /usr/include/c++/5/fstream /usr/include/c++/5/bits/codecvt.h \
- /usr/include/x86_64-linux-gnu/c++/5/bits/basic_file.h \
- /usr/include/x86_64-linux-gnu/c++/5/bits/c++io.h \
- /usr/include/c++/5/bits/fstream.tcc \
- /home/bsumma/simulations/builds/geant4-install/include/Geant4/G4PhysicsVectorCache.hh \
- /home/bsumma/simulations/builds/geant4-install/include/Geant4/G4PhysicsVectorType.hh \
- /home/bsumma/simulations/builds/geant4-install/include/Geant4/G4PhysicsVector.icc \
- /home/bsumma/simulations/builds/geant4-install/include/Geant4/G4PhysicsOrderedFreeVector.icc \
- /home/bsumma/simulations/builds/geant4-install/include/Geant4/G4MaterialPropertiesTable.icc \
- /home/bsumma/simulations/builds/geant4-install/include/Geant4/G4IonisParamMat.hh \
- /home/bsumma/simulations/builds/geant4-install/include/Geant4/G4SandiaTable.hh \
- /home/bsumma/simulations/builds/geant4-install/include/Geant4/G4OrderedTable.hh \
- /home/bsumma/simulations/builds/geant4-install/include/Geant4/G4DataVector.hh \
- /home/bsumma/simulations/builds/geant4-install/include/Geant4/G4DataVector.icc \
- /home/bsumma/simulations/builds/geant4-install/include/Geant4/G4ElementVector.hh \
- /home/bsumma/simulations/builds/geant4-install/include/Geant4/G4MaterialTable.hh \
- /home/bsumma/simulations/builds/geant4-install/include/Geant4/G4Track.icc \
- /home/bsumma/simulations/builds/geant4-install/include/Geant4/G4Step.hh \
- /usr/include/c++/5/iomanip /usr/include/c++/5/locale \
- /usr/include/c++/5/bits/locale_facets_nonio.h /usr/include/c++/5/ctime \
- /usr/include/x86_64-linux-gnu/c++/5/bits/time_members.h \
- /usr/include/x86_64-linux-gnu/c++/5/bits/messages_members.h \
- /usr/include/libintl.h /usr/include/c++/5/bits/locale_facets_nonio.tcc \
- /usr/include/c++/5/bits/locale_conv.h \
- /usr/include/c++/5/bits/stringfwd.h /usr/include/c++/5/bits/allocator.h \
- /usr/include/c++/5/bits/codecvt.h /usr/include/c++/5/bits/unique_ptr.h \
- /home/bsumma/simulations/builds/geant4-install/include/Geant4/G4StepPoint.hh \
- /home/bsumma/simulations/builds/geant4-install/include/Geant4/G4SteppingControl.hh \
- /home/bsumma/simulations/builds/geant4-install/include/Geant4/G4StepStatus.hh \
- /home/bsumma/simulations/builds/geant4-install/include/Geant4/G4StepPoint.icc \
- /home/bsumma/simulations/builds/geant4-install/include/Geant4/G4TrackVector.hh \
- /home/bsumma/simulations/builds/geant4-install/include/Geant4/G4Step.icc \
- /home/bsumma/simulations/builds/geant4-install/include/Geant4/G4Track.hh \
- /home/bsumma/simulations/builds/geant4-install/include/Geant4/G4VUserTrackInformation.hh \
- /home/bsumma/simulations/builds/geant4-install/include/Geant4/G4UnitsTable.hh \
- /home/bsumma/simulations/builds/geant4-install/include/Geant4/G4UnitsTable.icc \
- /home/bsumma/simulations/builds/geant4-install/include/Geant4/G4VVisManager.hh \
- /home/bsumma/simulations/builds/geant4-install/include/Geant4/G4Transform3D.hh \
- /home/bsumma/simulations/builds/geant4-install/include/Geant4/CLHEP/Geometry/Transform3D.h \
- /home/bsumma/simulations/builds/geant4-install/include/Geant4/CLHEP/Geometry/Transform3D.icc \
  /home/bsumma/simulations/builds/geant4-install/include/Geant4/CLHEP/Geometry/Point3D.h \
  /home/bsumma/simulations/builds/geant4-install/include/Geant4/CLHEP/Geometry/BasicVector3D.h \
  /home/bsumma/simulations/builds/geant4-install/include/Geant4/CLHEP/Geometry/Vector3D.h \
  /home/bsumma/simulations/builds/geant4-install/include/Geant4/CLHEP/Geometry/Normal3D.h \
+ /home/bsumma/simulations/builds/geant4-install/include/Geant4/G4RotationMatrix.hh \
  /home/bsumma/simulations/builds/geant4-install/include/Geant4/G4Circle.hh \
  /home/bsumma/simulations/builds/geant4-install/include/Geant4/G4VMarker.hh \
  /home/bsumma/simulations/builds/geant4-install/include/Geant4/G4Visible.hh \

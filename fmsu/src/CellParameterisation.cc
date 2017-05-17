@@ -1,5 +1,6 @@
 #include "CellParameterisation.hh"
 
+#include "CellGeo.hh"
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
 CellParameterisation::CellParameterisation(  

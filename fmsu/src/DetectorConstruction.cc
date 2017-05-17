@@ -1,4 +1,5 @@
 #include "DetectorConstruction.hh"
+
 #include "CellParameterisation.hh"
 #include "FMSlarge.hh"
 #include "FMSsmall.hh"
@@ -86,6 +87,7 @@ CellSpacingS(0.),
 CellLengthL(0.),
 CellLengthS(0.)
 {
+  useSurface=true;
 
 }
 
@@ -266,33 +268,53 @@ G4VPhysicalVolume* DetectorConstruction::Construct()
   G4double HalfWorldLength = 0.5*fWorldLength; // half world length
 
 
-  //BS CHANGE
   G4double PhotoCRadiusL,PhotoCRadiusS;
   CellWidthL = 5.80*cm;     // large cell width
-//  CellSpacingL = 5.81*cm;   // large cell spacing
-  CellSpacingL = 5.80*cm;   // large cell spacing
+  CellSpacingL = 5.81*cm;   // large cell spacing
   CellLengthL = 60.*cm;    // large cell length
   PhotoCRadiusL = 1.675*cm; // photocathode radius
   CellWidthS = 3.81*cm;   // small cell width
-//  CellSpacingS = 3.82*cm; // small cell spacing
-  CellSpacingS = 3.81*cm; // small cell spacing
+  CellSpacingS = 3.82*cm; // small cell spacing
   CellLengthS = 45.*cm;   // small cell length
   PhotoCRadiusS = 1.4*cm; // photocathode radius
-  
-//  fFMSLengthL = CellLengthL+1.*cm;     // FMS length
-//  fFMSLengthS = CellLengthS+1.*cm;     // FMS length
+
+  fFMSLengthL = CellLengthL+1.*cm;     // FMS length
+  fFMSLengthS = CellLengthS+1.*cm;     // FMS length
+
+  G4double Alwidth, Airgapwidth;
+
+  //BS CHANGE
+  if(useSurface)
+  {
+    //BS. Use optical surface rather than explict construction of mylar
+
+
+    //put cells right next to each other
+  CellSpacingL = CellWidthL ;   // large cell spacing
+  CellSpacingS = CellWidthS; // small cell spacing
+
+  //Get rid of extra cm
   fFMSLengthL = CellLengthL;     // FMS length
   fFMSLengthS = CellLengthS;     // FMS length
   fFMSWidthL = CellSpacingL*34;
   fFMSWidthS = CellSpacingS*24;
 
+  // gets rid of aluminum. Air is by default already between cells
+  Alwidth=0;
+  Airgapwidth=0;
+  }
+  else
+  {
+    //Use origional method
+  Alwidth=.002*cm;
+  Airgapwidth=.002*cm;
+  }
+
+  fFMSWidthL = CellSpacingL*34;
+  fFMSWidthS = CellSpacingS*24;
+
   G4double HalfPhotoCLength=.05*cm; // photocathode length
 
-//  G4double Alwidth=.002*cm;
-//  G4double Airgapwidth=.002*cm;
-  G4double Alwidth=0.0;
-  G4double Airgapwidth=0;
-  //BS Testing no air gap
 
   G4double AlAirgap=Alwidth+Airgapwidth; // air gaps
 
@@ -354,9 +376,6 @@ G4VPhysicalVolume* DetectorConstruction::Construct()
     false,
     0);
 
-  //BS CHANGE
-Alwidth=0.0;
-Airgapwidth=0;
   G4ThreeVector positionAlCellL = G4ThreeVector(0,0,0);
   G4ThreeVector positionCellL = G4ThreeVector(0,0,-HalfPhotoCLength-CookieLength/2);
 
@@ -460,14 +479,33 @@ Airgapwidth=0;
   G4LogicalBorderSurface* SurfaceL = new G4LogicalBorderSurface("mylarL",physiAlCellL,physiFMSL,OpSurfaceL);
   G4LogicalBorderSurface* SurfaceS = new G4LogicalBorderSurface("mylarS",physiAlCellS,physiFMSS,OpSurfaceS);
 
+
+  if(useSurface)
+  {
+    //Use surface to represent air gap
   OpSurfaceS -> SetType(dielectric_dielectric);
   OpSurfaceL -> SetType(dielectric_dielectric);
   OpSurfaceL -> SetModel(unified);
   OpSurfaceS -> SetModel(unified);
 
-
   OpSurfaceS -> SetFinish(polishedbackpainted);
   OpSurfaceL -> SetFinish(polishedbackpainted);
+
+  }
+  else
+  {
+    OpSurfaceL->SetType(dielectric_metal);
+    OpSurfaceL->SetFinish(ground);
+    OpSurfaceL->SetModel(glisur);
+    OpSurfaceS->SetType(dielectric_metal);
+    OpSurfaceS->SetFinish(ground);
+    OpSurfaceS->SetModel(glisur);
+
+    G4double polish=0.8;
+
+
+  }
+
 
   G4double reflectivity[nEntries]=
   {0.909,0.908,0.906,0.905,0.903,0.901,0.900,
@@ -489,6 +527,9 @@ Airgapwidth=0;
 
 
 
+  //BS CHANGE
+  if(useSurface)
+  {
      //I think this gives propabilities for various types of reflections from the crystal-air interface. The polished surface will always have a spike
   
   G4double zeroarr[nEntries]={0};
@@ -503,9 +544,9 @@ Airgapwidth=0;
 
   OpSurfacePropertyL -> AddProperty("RINDEX",ppp,unity,NUM);
   OpSurfacePropertyS -> AddProperty("RINDEX",ppp,unity,NUM);
+  }
+  //End BS CHANGE
 
-
-  //END BS
 
 
   /*

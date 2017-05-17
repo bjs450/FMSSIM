@@ -62,9 +62,11 @@ void CellGeo::SetGains(G4String txtString, G4String gainString, G4String corrStr
   G4String fmsgain = fu->GetEnv("FMSGAIN");
   G4String fmscorr = fu->GetEnv("FMSCORR");
 
+  //BS CHANGE
   if(txtString!="") { fmstxt = txtString; std::cout<<"USING USER TXT"<<std::endl;}
   if(gainString!="") fmsgain = gainString;
   if(corrString!="") fmscorr = corrString;
+  //END BS
 
   G4String fmsgainfile = fmstxt+"/"+fmsgain;
   G4String fmscorrfile = fmstxt+"/"+fmscorr;
@@ -85,6 +87,8 @@ void CellGeo::SetGains(G4String txtString, G4String gainString, G4String corrStr
     sscanf(str,"%d %d %d %f",&dev,&nn,&tt,&gg);
     if(dev==2) gain[tt-1][nn-1] = gg;
   }
+  if((fclose(gainfile))) {fputs("gainfile failed to close", stderr); exit(1); } //BS CHANGE
+
     
   FILE * corrfile;
   corrfile = fopen(fmscorrfile,"r");
@@ -98,6 +102,7 @@ void CellGeo::SetGains(G4String txtString, G4String gainString, G4String corrStr
     sscanf(str,"%d %d %d %f",&dev,&nn,&tt,&gg);
     if(dev==2) corr[tt-1][nn-1] = gg;
   }
+  if((fclose(corrfile))) {fputs("corrfile failed to close", stderr); exit(1); } //BS CHANGE
 }
 
 G4float CellGeo::GetGain(G4int nstb, G4int row, G4int col)

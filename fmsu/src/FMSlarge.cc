@@ -10,6 +10,8 @@
 #include "G4ParticleDefinition.hh"
 #include "G4ParticleTypes.hh"
 #include <stdio.h>
+
+#include "TrackInformation.hh"
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
 FMSlarge::FMSlarge(G4String name)

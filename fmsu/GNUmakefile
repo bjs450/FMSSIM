@@ -8,7 +8,7 @@ G4TARGET := $(name)
 G4EXLIB := true
 
 #BS The following line is needed because by default the G4TMP directory is set to $G4WORDIR/tmp, which is will cause the program to be created in the origional geant directory. open up new bash session to make sure this doesnt cause issues after finishing if you want to work in the old directory
-G4WORKDIR := ${HOME}/simulations/geant/
+G4WORKDIR := ${HOME}/simulations/FMSSIM/
 G4INSTALL := ${HOME}/simulations/builds/geant4-install/share/Geant4-9.5.1/geant4make
 
 ifndef G4INSTALL

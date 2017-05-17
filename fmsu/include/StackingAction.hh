@@ -54,6 +54,9 @@ class StackingAction : public G4UserStackingAction
     float eta_;
     float phi_;
     float pt_;
+
+    //BS CHANGE
+    G4bool keepCoordtr;
 };
 
 extern StackingAction * stackaction;

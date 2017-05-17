@@ -52,7 +52,7 @@ class PrimaryGeneratorAction : public G4VUserPrimaryGeneratorAction
     void GeneratePrimaries(G4Event*);
     
   private:
-    G4ParticleGun* particleGun;
+//    G4ParticleGun* particleGun;
     G4GeneralParticleSource *fParticleGun;
     DetectorConstruction* myDetector;
   

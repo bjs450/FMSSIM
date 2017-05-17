@@ -3,10 +3,8 @@
 
 #include "globals.hh"
 #include "G4VPVParameterisation.hh"
-#include "CellGeo.hh"
 
 #include "G4VPhysicalVolume.hh"
-#include "G4ThreeVector.hh"
 #include "G4Box.hh"
 
 class G4VPhysicalVolume;
@@ -38,8 +36,9 @@ class CellParameterisation : public G4VPVParameterisation
 				G4double widthCell,
 				G4double lengthCell);
   
-//    virtual //BS
-   ~CellParameterisation();
+//BS
+   ~CellParameterisation(); //Stops warnings
+//End BS
    
     void ComputeTransformation (const G4int copyNo,
                                 G4VPhysicalVolume* physVol) const;
@@ -73,5 +72,3 @@ class CellParameterisation : public G4VPVParameterisation
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
 #endif
-
-

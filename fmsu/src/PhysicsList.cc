@@ -1,5 +1,56 @@
 #include "PhysicsList.hh"
 
+////Particle Definitions
+#include "G4ParticleDefinition.hh"
+#include "G4ParticleTypes.hh"
+#include "G4ParticleTable.hh"
+
+#include "G4Material.hh"
+#include "G4MaterialTable.hh"
+
+#include "G4ProcessManager.hh"
+#include "G4ProcessVector.hh"
+
+#include "G4Cerenkov.hh"
+#include "G4Scintillation.hh"
+#include "G4OpAbsorption.hh"
+#include "G4OpRayleigh.hh"
+#include "G4OpBoundaryProcess.hh"
+
+#include "G4LossTableManager.hh"
+#include "G4EmSaturation.hh"
+
+#include "G4ParticleDefinition.hh"
+
+////Process Definititions
+
+#include "G4ComptonScattering.hh"
+#include "G4GammaConversion.hh"
+#include "G4PhotoElectricEffect.hh"
+
+#include "G4eMultipleScattering.hh"
+#include "G4eIonisation.hh"
+#include "G4eBremsstrahlung.hh"
+#include "G4eplusAnnihilation.hh"
+
+#include "G4MuMultipleScattering.hh"
+#include "G4MuIonisation.hh"
+#include "G4MuBremsstrahlung.hh"
+#include "G4MuPairProduction.hh"
+
+#include "G4hMultipleScattering.hh"
+#include "G4hIonisation.hh"
+#include "G4hBremsstrahlung.hh"
+#include "G4hPairProduction.hh"
+#include "G4ionIonisation.hh"
+
+///MISC
+#include "G4Decay.hh"
+#include "G4StepLimiter.hh"
+#include "G4UserSpecialCuts.hh"
+#include "G4Cerenkov.hh"
+
+
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
  
@@ -266,10 +317,6 @@ void PhysicsList::ConstructOp(){
 
     G4OpticalSurfaceModel themodel = unified;
   theBoundaryProcess->SetModel(themodel);
-  //BS
-//  theBoundaryProcess->SetVerboseLevel(2);
-//  theScintillationProcess->SetVerboseLevel(2);
-//  theAbsorptionProcess->SetVerboseLevel(2);
 
   theParticleIterator->reset();
   while( (*theParticleIterator)() ){
